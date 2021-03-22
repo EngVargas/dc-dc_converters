@@ -4,7 +4,7 @@
   <settings ppi="96">
     <identity>
       <id>44b7c08b-9623-48f5-b720-cbef4085de44</id>
-      <revision>57</revision>
+      <revision>61</revision>
     </identity>
     <calculation>
       <precision>4</precision>
@@ -38,7 +38,7 @@ operando em DCM</p>
       <text lang="por">
         <p>Prof. Diogo Vargas
 UTFPR Pato Branco
-Versão 2019</p>
+Versão 2021</p>
       </text>
     </region>
     <region left="9" top="180" width="383" height="24" color="#000000" fontSize="10">
@@ -510,7 +510,7 @@ garantir DCM:</p>
         <p fontName="Arial">Pela topologia temos:</p>
       </text>
     </region>
-    <region left="243" top="1395" width="213" height="50" color="#000000" bgColor="#80ff80" fontSize="10">
+    <region left="243" top="1395" width="236" height="50" color="#000000" bgColor="#80ff80" fontSize="10">
       <math>
         <input>
           <e type="operand">I.Lmed</e>
@@ -523,10 +523,11 @@ garantir DCM:</p>
           <e type="operator" args="2">/</e>
           <e type="operator" args="2">:</e>
         </input>
+        <contract>
+          <e type="operand" style="unit">mA</e>
+        </contract>
         <result action="numeric">
-          <e type="operand">0.5556</e>
-          <e type="operand" style="unit">A</e>
-          <e type="operator" args="2">*</e>
+          <e type="operand">555.5556</e>
         </result>
       </math>
     </region>
@@ -673,17 +674,6 @@ temos: </p>
         </result>
       </math>
     </region>
-    <region left="522" top="1791" width="153" height="30" color="#000000" fontSize="10">
-      <math>
-        <input>
-          <e type="operand">Ripple.tensao</e>
-          <e type="operand">0.5</e>
-          <e type="operand" style="unit">%</e>
-          <e type="operator" args="2">*</e>
-          <e type="operator" args="2">:</e>
-        </input>
-      </math>
-    </region>
     <region left="216" top="1800" width="96" height="24" color="#000000" fontSize="10">
       <math>
         <input>
@@ -706,7 +696,7 @@ temos: </p>
           <e type="operator" args="2">:</e>
         </input>
         <result action="numeric">
-          <e type="operand">1.56</e>
+          <e type="operand">3.12</e>
           <e type="operand" style="unit">V</e>
           <e type="operator" args="2">*</e>
         </result>
@@ -724,7 +714,7 @@ temos: </p>
           <e type="operator" args="2">:</e>
         </input>
         <result action="numeric">
-          <e type="operand">312.78</e>
+          <e type="operand">313.56</e>
           <e type="operand" style="unit">V</e>
           <e type="operator" args="2">*</e>
         </result>
@@ -743,7 +733,7 @@ temos: </p>
           <e type="operator" args="2">:</e>
         </input>
         <result action="numeric">
-          <e type="operand">311.22</e>
+          <e type="operand">310.44</e>
           <e type="operand" style="unit">V</e>
           <e type="operator" args="2">*</e>
         </result>
@@ -768,7 +758,7 @@ para diodo (D) e chave (S)</p>
           <e type="operator" args="2">:</e>
         </input>
         <result action="numeric">
-          <e type="operand">312.78</e>
+          <e type="operand">313.56</e>
           <e type="operand" style="unit">V</e>
           <e type="operator" args="2">*</e>
         </result>
@@ -826,6 +816,11 @@ IRFP250: 200V e 19A</p>
         </result>
       </math>
     </region>
+    <region left="774" top="2448" width="233" height="24" color="#000000" fontSize="10">
+      <text lang="por">
+        <p fontName="Arial">Conferindo na simulação do LTspice:</p>
+      </text>
+    </region>
     <region left="351" top="2475" width="230" height="41" border="true" color="#000000" fontSize="10">
       <math decimalPlaces="3">
         <input>
@@ -845,6 +840,15 @@ IRFP250: 200V e 19A</p>
         </result>
       </math>
     </region>
+    <region left="774" top="2475" width="102" height="24" color="#000000" bgColor="#ff80ff" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">159.99689</e>
+          <e type="operand" style="unit">μs</e>
+          <e type="operator" args="2">*</e>
+        </input>
+      </math>
+    </region>
     <region left="54" top="2484" width="209" height="30" border="true" color="#000000" fontSize="10">
       <math decimalPlaces="3">
         <input>
@@ -857,6 +861,15 @@ IRFP250: 200V e 19A</p>
         <result action="numeric">
           <e type="operand">121.846</e>
         </result>
+      </math>
+    </region>
+    <region left="774" top="2493" width="102" height="24" color="#000000" bgColor="#ff80ff" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">166.76087</e>
+          <e type="operand" style="unit">μs</e>
+          <e type="operator" args="2">*</e>
+        </input>
       </math>
     </region>
     <region left="351" top="2511" width="213" height="41" border="true" color="#000000" fontSize="10">
@@ -889,6 +902,24 @@ IRFP250: 200V e 19A</p>
         </result>
       </math>
     </region>
+    <region left="774" top="2520" width="102" height="24" color="#000000" bgColor="#ff80ff" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">176.04037</e>
+          <e type="operand" style="unit">μs</e>
+          <e type="operator" args="2">*</e>
+        </input>
+      </math>
+    </region>
+    <region left="774" top="2538" width="102" height="24" color="#000000" bgColor="#ff80ff" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">180.03727</e>
+          <e type="operand" style="unit">μs</e>
+          <e type="operator" args="2">*</e>
+        </input>
+      </math>
+    </region>
     <region left="54" top="2565" width="249" height="42" border="true" color="#000000" fontSize="10">
       <math decimalPlaces="3">
         <input>
@@ -912,6 +943,46 @@ IRFP250: 200V e 19A</p>
         </result>
       </math>
     </region>
+    <region left="765" top="2565" width="338" height="47" color="#000000" bgColor="#ff80ff" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">duty1</e>
+          <e type="operand">166.76087</e>
+          <e type="operand" style="unit">μs</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">159.99689</e>
+          <e type="operand" style="unit">μs</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">-</e>
+          <e type="operand">Periodo.LTspice</e>
+          <e type="operator" args="2">/</e>
+          <e type="operator" args="2">:</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">0.3382</e>
+        </result>
+      </math>
+    </region>
+    <region left="1125" top="2574" width="90" height="30" color="#000000" bgColor="#ff80ff" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">D.1</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">0.3385</e>
+        </result>
+      </math>
+    </region>
+    <region left="1125" top="2601" width="90" height="30" color="#000000" bgColor="#ff80ff" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">D.2</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">0.4615</e>
+        </result>
+      </math>
+    </region>
     <region left="54" top="2610" width="152" height="30" border="true" color="#000000" fontSize="10">
       <math>
         <input>
@@ -925,6 +996,26 @@ IRFP250: 200V e 19A</p>
         </result>
       </math>
     </region>
+    <region left="765" top="2610" width="330" height="47" color="#000000" bgColor="#ff80ff" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">duty2</e>
+          <e type="operand">176.04037</e>
+          <e type="operand" style="unit">μs</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">166.76087</e>
+          <e type="operand" style="unit">μs</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">-</e>
+          <e type="operand">Periodo.LTspice</e>
+          <e type="operator" args="2">/</e>
+          <e type="operator" args="2">:</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">0.464</e>
+        </result>
+      </math>
+    </region>
     <region left="54" top="2646" width="152" height="24" border="true" color="#000000" fontSize="10">
       <math>
         <input>
@@ -935,6 +1026,36 @@ IRFP250: 200V e 19A</p>
         </contract>
         <result action="numeric">
           <e type="operand">1106.3066</e>
+        </result>
+      </math>
+    </region>
+    <region left="765" top="2655" width="338" height="47" color="#000000" bgColor="#ff80ff" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">duty3</e>
+          <e type="operand">180.03727</e>
+          <e type="operand" style="unit">μs</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">176.04037</e>
+          <e type="operand" style="unit">μs</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">-</e>
+          <e type="operand">Periodo.LTspice</e>
+          <e type="operator" args="2">/</e>
+          <e type="operator" args="2">:</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">0.1998</e>
+        </result>
+      </math>
+    </region>
+    <region left="1125" top="2664" width="66" height="30" color="#000000" bgColor="#ff80ff" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">D.3</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">0.2</e>
         </result>
       </math>
     </region>
@@ -973,7 +1094,7 @@ IRFP250: 200V e 19A</p>
           <e type="operand">Vout.max</e>
         </input>
         <result action="numeric">
-          <e type="operand">312.78</e>
+          <e type="operand">313.56</e>
           <e type="operand" style="unit">V</e>
           <e type="operator" args="2">*</e>
         </result>
@@ -997,7 +1118,7 @@ IRFP250: 200V e 19A</p>
           <e type="operand">Vout.min</e>
         </input>
         <result action="numeric">
-          <e type="operand">311.22</e>
+          <e type="operand">310.44</e>
           <e type="operand" style="unit">V</e>
           <e type="operator" args="2">*</e>
         </result>
