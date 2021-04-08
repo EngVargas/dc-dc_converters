@@ -1,16 +1,17 @@
 # dc-dc_converters
-Projeto e simulação de conversores chaveados (conversores estáticos), buck, boost, buck-boost, CCM, DCM, etc.
+Projeto e simulação de conversores chaveados (conversores estáticos), buck, boost, buck-boost, CCM, DCM, etc. <br>
 
-Playlist do youtube com o desevolvimento desses arquivos: https://www.youtube.com/playlist?list=PLbFFLnJpBtKutETcYcNrqlykSB-Lf8TzS
+Playlist do youtube com o desevolvimento desses arquivos: https://www.youtube.com/playlist?list=PLbFFLnJpBtKutETcYcNrqlykSB-Lf8TzS  <br>
 
--Projeto realizado no software Smath.
--Simulações no LTspice com modelo ideal de chave (SW) e diodo.
--Simulações no LTspice com modelo spice de MOSFET (nmos)
--Simulações no PSIM usando componentes ideais.
+-Projeto realizado no software Smath. <br>
+-Simulações no LTspice com modelo ideal de chave (SW) e diodo. <br>
+-Simulações no LTspice com modelo spice de MOSFET (nmos). <br>
+-Simulações no PSIM usando componentes ideais. <br>
 
+<br>
 
-Professor Diogo Vargas
+Professor Diogo Vargas <br>
 
-UTFPR câmpus Pato Branco
+UTFPR câmpus Pato Branco <br>
 
-Universidade Tecnológica Federal do Paraná
+Universidade Tecnológica Federal do Paraná <br>
