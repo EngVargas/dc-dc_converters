@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<?application progid="SMath Studio Desktop" version="0.99.7610.506"?>
+<?application progid="SMath Studio Desktop" version="0.99.7822.147"?>
 <worksheet xmlns="http://smath.info/schemas/worksheet/1.0">
   <settings ppi="96">
     <identity>
       <id>59069273-b520-4782-8714-0a2e0a7bcc38</id>
-      <revision>114</revision>
+      <revision>119</revision>
     </identity>
     <calculation>
       <precision>4</precision>
@@ -22,72 +22,68 @@
       <backgrounds />
     </pageModel>
     <dependencies>
-      <assembly name="SMath Studio Desktop" version="0.99.7610.506" guid="a37cba83-b69c-4c71-9992-55ff666763bd" />
-      <assembly name="Math Region" version="0.99.7610.506" guid="02f1ab51-215b-466e-a74d-5d8b1cf85e8d" />
-      <assembly name="TextRegion" version="1.11.7610.506" guid="485d28c5-349a-48b6-93be-12a35a1c1e39" />
+      <assembly name="SMath Studio Desktop" version="0.99.7822.147" guid="a37cba83-b69c-4c71-9992-55ff666763bd" />
+      <assembly name="MathRegion" version="1.11.7822.147" guid="02f1ab51-215b-466e-a74d-5d8b1cf85e8d" />
+      <assembly name="TextRegion" version="1.11.7822.147" guid="485d28c5-349a-48b6-93be-12a35a1c1e39" />
+      <assembly name="AreaRegion" version="1.11.7822.147" guid="4974b228-4974-44cf-8274-bf2936b4a766" />
     </dependencies>
   </settings>
   <regions type="content">
-    <region left="18" top="9" width="517" height="73" color="#000000" fontSize="20">
-      <text lang="eng">
-        <p>Projeto conversor boost (CC-CC)
-operando em CCM</p>
+    <region left="18" top="9" width="510" height="68" color="#000000" fontSize="20" isBreakable="false">
+      <text lang="eng" fontFamily="Arial" fontSize="10">
+        <content>
+          <p style="font-family: Courier New; font-size: 20px;">Projeto conversor boost (CC-CC)<br />operando em CCM</p>
+        </content>
       </text>
     </region>
-    <region left="18" top="90" width="189" height="66" color="#000000" fontSize="12">
-      <text lang="por">
-        <p>Prof. Diogo Vargas
-UTFPR Pato Branco
-Versão 2019</p>
+    <region left="18" top="90" width="187" height="62" color="#000000" fontSize="12" isBreakable="false">
+      <text lang="por" fontFamily="Arial" fontSize="10">
+        <content>
+          <p style="font-family: Courier New; font-size: 12px;">Prof. Diogo Vargas<br />UTFPR Pato Branco<br />Versão 2019</p>
+        </content>
       </text>
     </region>
-    <region left="18" top="171" width="383" height="24" color="#000000" fontSize="10">
-      <text lang="eng">
-        <p>Parâmetros de entrada (requisitos de projeto):</p>
+    <region left="18" top="171" width="382" height="23" color="#000000" fontSize="10" isBreakable="false">
+      <text lang="eng" fontFamily="Arial" fontSize="10">
+        <content>
+          <p style="font-family: Courier New;">Parâmetros de entrada (requisitos de projeto):</p>
+        </content>
       </text>
     </region>
-    <region left="18" top="207" width="247" height="186" color="#000000" fontSize="10">
-      <text lang="eng">
-        <p>Tensão de entrada:
-
-Tensão de saída:
-
-Carga:
-
-Frequência de chaveamento:
-
-Ripple de corrente (indutor):
-
-Ripple de tensão (capacitor):</p>
+    <region left="18" top="207" width="246" height="173" color="#000000" fontSize="10" isBreakable="false">
+      <text lang="eng" fontFamily="Arial" fontSize="10">
+        <content>
+          <p style="font-family: Courier New;">Tensão de entrada:<br /><br />Tensão de saída:<br /><br />Carga:<br /><br />Frequência de chaveamento:<br /><br />Ripple de corrente (indutor):<br /><br />Ripple de tensão (capacitor):</p>
+        </content>
       </text>
     </region>
-    <region left="279" top="207" width="90" height="24" border="true" color="#000000" bgColor="#ffff00" fontSize="10">
+    <region left="279" top="207" width="82" height="24" border="true" color="#000000" bgColor="#ffff00" fontSize="10">
       <math decimalPlaces="3">
         <input>
           <e type="operand">Vin</e>
-          <e type="operand">100</e>
+          <e type="operand">50</e>
           <e type="operand" style="unit">V</e>
           <e type="operator" args="2">*</e>
           <e type="operator" args="2">:</e>
         </input>
       </math>
     </region>
-    <region left="279" top="234" width="98" height="24" border="true" color="#000000" bgColor="#ffff00" fontSize="10">
+    <region left="279" top="234" width="90" height="24" border="true" color="#000000" bgColor="#ffff00" fontSize="10">
       <math decimalPlaces="3">
         <input>
           <e type="operand">Vout</e>
-          <e type="operand">300</e>
+          <e type="operand">80</e>
           <e type="operand" style="unit">V</e>
           <e type="operator" args="2">*</e>
           <e type="operator" args="2">:</e>
         </input>
       </math>
     </region>
-    <region left="279" top="270" width="98" height="24" border="true" color="#000000" bgColor="#ffff00" fontSize="10">
+    <region left="279" top="270" width="90" height="24" border="true" color="#000000" bgColor="#ffff00" fontSize="10">
       <math optimize="2" decimalPlaces="3">
         <input>
           <e type="operand">Rout</e>
-          <e type="operand">300</e>
+          <e type="operand">40</e>
           <e type="operand" style="unit">Ω</e>
           <e type="operator" args="2">*</e>
           <e type="operator" args="2">:</e>
@@ -130,18 +126,20 @@ Ripple de tensão (capacitor):</p>
     <region top="441" color="#000000">
       <area single="true" collapsed="true" />
     </region>
-    <region left="0" top="459" width="163" height="31" border="true" color="#000000" fontSize="14">
-      <text lang="por">
-        <p>Pré-cálculos:</p>
+    <region left="0" top="459" width="160" height="29" border="true" color="#000000" fontSize="14" isBreakable="false">
+      <text lang="por" fontFamily="Arial" fontSize="10">
+        <content>
+          <p style="font-family: Courier New; font-size: 14px;">Pré-cálculos:</p>
+        </content>
       </text>
     </region>
-    <region left="99" top="495" width="96" height="24" border="true" color="#000000" fontSize="10">
+    <region left="99" top="495" width="88" height="24" border="true" color="#000000" fontSize="10">
       <math>
         <input>
           <e type="operand">Rout</e>
         </input>
         <result action="numeric">
-          <e type="operand">300</e>
+          <e type="operand">40</e>
           <e type="operand" style="unit">Ω</e>
           <e type="operator" args="2">*</e>
         </result>
@@ -157,7 +155,7 @@ Ripple de tensão (capacitor):</p>
           <e type="operator" args="2">:</e>
         </input>
         <result action="numeric">
-          <e type="operand">1</e>
+          <e type="operand">2</e>
           <e type="operand" style="unit">A</e>
           <e type="operator" args="2">*</e>
         </result>
@@ -173,7 +171,7 @@ Ripple de tensão (capacitor):</p>
           <e type="operator" args="2">:</e>
         </input>
         <result action="numeric">
-          <e type="operand">300</e>
+          <e type="operand">160</e>
           <e type="operand" style="unit">W</e>
           <e type="operator" args="2">*</e>
         </result>
@@ -196,12 +194,14 @@ Ripple de tensão (capacitor):</p>
         </result>
       </math>
     </region>
-    <region left="0" top="675" width="421" height="31" border="true" color="#000000" fontSize="14">
-      <text lang="eng">
-        <p>Projeto dos parâmetros do conversor:</p>
+    <region left="0" top="675" width="417" height="29" border="true" color="#000000" fontSize="14" isBreakable="false">
+      <text lang="eng" fontFamily="Arial" fontSize="10">
+        <content>
+          <p style="font-family: Courier New; font-size: 14px;">Projeto dos parâmetros do conversor:</p>
+        </content>
       </text>
     </region>
-    <region left="279" top="711" width="132" height="41" border="true" color="#000000" fontSize="10">
+    <region left="279" top="711" width="148" height="41" border="true" color="#000000" fontSize="10">
       <math decimalPlaces="3">
         <input>
           <e type="operand">Ganho</e>
@@ -211,18 +211,22 @@ Ripple de tensão (capacitor):</p>
           <e type="operator" args="2">:</e>
         </input>
         <result action="numeric">
-          <e type="operand">3</e>
+          <e type="operand">1.6</e>
         </result>
       </math>
     </region>
-    <region left="36" top="720" width="215" height="24" color="#000000" fontSize="10">
-      <text lang="eng">
-        <p>Ganho estático de tensão:</p>
+    <region left="36" top="720" width="214" height="23" color="#000000" fontSize="10" isBreakable="false">
+      <text lang="eng" fontFamily="Arial" fontSize="10">
+        <content>
+          <p style="font-family: Courier New;">Ganho estático de tensão:</p>
+        </content>
       </text>
     </region>
-    <region left="576" top="738" width="39" height="24" color="#000000" fontSize="10">
-      <text lang="por">
-        <p>ou </p>
+    <region left="576" top="738" width="38" height="23" color="#000000" fontSize="10" isBreakable="false">
+      <text lang="por" fontFamily="Arial" fontSize="10">
+        <content>
+          <p style="font-family: Courier New;">ou </p>
+        </content>
       </text>
     </region>
     <region left="279" top="756" width="179" height="41" border="true" color="#000000" bgColor="#80ff80" fontSize="10">
@@ -237,11 +241,11 @@ Ripple de tensão (capacitor):</p>
           <e type="operator" args="2">:</e>
         </input>
         <result action="numeric">
-          <e type="operand">0.667</e>
+          <e type="operand">0.375</e>
         </result>
       </math>
     </region>
-    <region left="540" top="756" width="137" height="47" border="true" color="#000000" fontSize="10">
+    <region left="540" top="756" width="153" height="47" border="true" color="#000000" fontSize="10">
       <math>
         <input>
           <e type="operand">Ganho</e>
@@ -253,13 +257,15 @@ Ripple de tensão (capacitor):</p>
           <e type="operator" args="2">:</e>
         </input>
         <result action="numeric">
-          <e type="operand">3</e>
+          <e type="operand">1.6</e>
         </result>
       </math>
     </region>
-    <region left="36" top="774" width="143" height="24" color="#000000" fontSize="10">
-      <text lang="por">
-        <p>Duty cycle (D1):</p>
+    <region left="36" top="774" width="142" height="23" color="#000000" fontSize="10" isBreakable="false">
+      <text lang="por" fontFamily="Arial" fontSize="10">
+        <content>
+          <p style="font-family: Courier New;">Duty cycle (D1):</p>
+        </content>
       </text>
     </region>
     <region left="198" top="792" width="28" height="24" color="#000000" fontSize="10">
@@ -269,7 +275,7 @@ Ripple de tensão (capacitor):</p>
         </input>
       </math>
     </region>
-    <region left="279" top="810" width="143" height="41" color="#000000" fontSize="10">
+    <region left="279" top="810" width="135" height="41" color="#000000" fontSize="10">
       <math>
         <input>
           <e type="operand">Ganho</e>
@@ -279,7 +285,7 @@ Ripple de tensão (capacitor):</p>
           <e type="operator" args="2">/</e>
         </input>
         <result action="numeric">
-          <e type="operand">0.6667</e>
+          <e type="operand">0.375</e>
         </result>
       </math>
     </region>
@@ -290,7 +296,7 @@ Ripple de tensão (capacitor):</p>
         </input>
       </math>
     </region>
-    <region left="279" top="855" width="135" height="41" color="#000000" fontSize="10">
+    <region left="279" top="855" width="127" height="41" color="#000000" fontSize="10">
       <math>
         <input>
           <e type="operand">1</e>
@@ -300,16 +306,18 @@ Ripple de tensão (capacitor):</p>
           <e type="operator" args="2">-</e>
         </input>
         <result action="numeric">
-          <e type="operand">0.6667</e>
+          <e type="operand">0.375</e>
         </result>
       </math>
     </region>
-    <region left="63" top="909" width="71" height="24" color="#000000" fontSize="10">
-      <text lang="por">
-        <p>Outros:</p>
+    <region left="63" top="909" width="70" height="23" color="#000000" fontSize="10" isBreakable="false">
+      <text lang="por" fontFamily="Arial" fontSize="10">
+        <content>
+          <p style="font-family: Courier New;">Outros:</p>
+        </content>
       </text>
     </region>
-    <region left="279" top="909" width="148" height="30" border="true" color="#000000" fontSize="10">
+    <region left="279" top="909" width="140" height="30" border="true" color="#000000" fontSize="10">
       <math>
         <input>
           <e type="operand">D.2</e>
@@ -319,13 +327,15 @@ Ripple de tensão (capacitor):</p>
           <e type="operator" args="2">:</e>
         </input>
         <result action="numeric">
-          <e type="operand">0.3333</e>
+          <e type="operand">0.625</e>
         </result>
       </math>
     </region>
-    <region left="18" top="963" width="207" height="24" color="#000000" fontSize="10">
-      <text lang="eng">
-        <p>Corrente de saída média:</p>
+    <region left="18" top="963" width="206" height="23" color="#000000" fontSize="10" isBreakable="false">
+      <text lang="eng" fontFamily="Arial" fontSize="10">
+        <content>
+          <p style="font-family: Courier New;">Corrente de saída média:</p>
+        </content>
       </text>
     </region>
     <region left="279" top="963" width="100" height="30" border="true" color="#000000" fontSize="10">
@@ -334,13 +344,13 @@ Ripple de tensão (capacitor):</p>
           <e type="operand">Iout.med</e>
         </input>
         <result action="numeric">
-          <e type="operand">1</e>
+          <e type="operand">2</e>
           <e type="operand" style="unit">A</e>
           <e type="operator" args="2">*</e>
         </result>
       </math>
     </region>
-    <region left="279" top="1017" width="210" height="58" border="true" color="#000000" fontSize="10">
+    <region left="279" top="1017" width="226" height="58" border="true" color="#000000" fontSize="10">
       <math decimalPlaces="3">
         <input>
           <e type="operand">IL.med</e>
@@ -357,18 +367,20 @@ Ripple de tensão (capacitor):</p>
           <e type="operator" args="2">:</e>
         </input>
         <result action="numeric">
-          <e type="operand">3</e>
+          <e type="operand">3.2</e>
           <e type="operand" style="unit">A</e>
           <e type="operator" args="2">*</e>
         </result>
       </math>
     </region>
-    <region left="18" top="1026" width="223" height="24" color="#000000" fontSize="10">
-      <text lang="por">
-        <p>Corrente do indutor média:</p>
+    <region left="18" top="1026" width="222" height="23" color="#000000" fontSize="10" isBreakable="false">
+      <text lang="por" fontFamily="Arial" fontSize="10">
+        <content>
+          <p style="font-family: Courier New;">Corrente do indutor média:</p>
+        </content>
       </text>
     </region>
-    <region left="342" top="1080" width="129" height="55" color="#000000" fontSize="11">
+    <region left="342" top="1080" width="147" height="55" color="#000000" fontSize="11">
       <math>
         <input>
           <e type="operand">Vout</e>
@@ -380,7 +392,7 @@ Ripple de tensão (capacitor):</p>
           <e type="operator" args="2">/</e>
         </input>
         <result action="numeric">
-          <e type="operand">3</e>
+          <e type="operand">3.2</e>
           <e type="operand" style="unit">A</e>
           <e type="operator" args="2">*</e>
         </result>
@@ -393,7 +405,7 @@ Ripple de tensão (capacitor):</p>
         </input>
       </math>
     </region>
-    <region left="567" top="1098" width="146" height="41" color="#000000" fontSize="10">
+    <region left="567" top="1098" width="162" height="41" color="#000000" fontSize="10">
       <math>
         <input>
           <e type="operand">Vout</e>
@@ -403,7 +415,7 @@ Ripple de tensão (capacitor):</p>
           <e type="operator" args="2">*</e>
         </input>
         <result action="numeric">
-          <e type="operand">3</e>
+          <e type="operand">3.2</e>
           <e type="operand" style="unit">A</e>
           <e type="operator" args="2">*</e>
         </result>
@@ -416,7 +428,7 @@ Ripple de tensão (capacitor):</p>
         </input>
       </math>
     </region>
-    <region left="342" top="1143" width="144" height="49" border="true" color="#000000" fontSize="10">
+    <region left="342" top="1143" width="160" height="49" border="true" color="#000000" fontSize="10">
       <math>
         <input>
           <e type="operand">Vout</e>
@@ -429,13 +441,13 @@ Ripple de tensão (capacitor):</p>
           <e type="operator" args="2">/</e>
         </input>
         <result action="numeric">
-          <e type="operand">3</e>
+          <e type="operand">3.2</e>
           <e type="operand" style="unit">A</e>
           <e type="operator" args="2">*</e>
         </result>
       </math>
     </region>
-    <region left="567" top="1143" width="151" height="47" color="#000000" fontSize="10">
+    <region left="567" top="1143" width="167" height="47" color="#000000" fontSize="10">
       <math>
         <input>
           <e type="operand">1</e>
@@ -447,7 +459,7 @@ Ripple de tensão (capacitor):</p>
           <e type="operator" args="2">*</e>
         </input>
         <result action="numeric">
-          <e type="operand">3</e>
+          <e type="operand">3.2</e>
           <e type="operand" style="unit">A</e>
           <e type="operator" args="2">*</e>
         </result>
@@ -456,12 +468,14 @@ Ripple de tensão (capacitor):</p>
     <region top="1206" color="#000000">
       <area single="true" collapsed="true" />
     </region>
-    <region left="0" top="1242" width="365" height="31" border="true" color="#000000" fontSize="14">
-      <text lang="eng">
-        <p>Projeto do valor de indutância:</p>
+    <region left="0" top="1242" width="361" height="29" border="true" color="#000000" fontSize="14" isBreakable="false">
+      <text lang="eng" fontFamily="Arial" fontSize="10">
+        <content>
+          <p style="font-family: Courier New; font-size: 14px;">Projeto do valor de indutância:</p>
+        </content>
       </text>
     </region>
-    <region left="279" top="1278" width="282" height="58" border="true" color="#000000" fontSize="10">
+    <region left="279" top="1278" width="274" height="58" border="true" color="#000000" fontSize="10">
       <math decimalPlaces="3">
         <input>
           <e type="operand">L.min</e>
@@ -485,23 +499,24 @@ Ripple de tensão (capacitor):</p>
           <e type="operand" style="unit">μH</e>
         </contract>
         <result action="numeric">
-          <e type="operand">222.222</e>
+          <e type="operand">58.594</e>
         </result>
       </math>
     </region>
-    <region left="0" top="1296" width="191" height="40" color="#000000" fontSize="10">
-      <text lang="eng">
-        <p>Indutância mínima para
-garantir CCM:</p>
+    <region left="0" top="1296" width="190" height="38" color="#000000" fontSize="10" isBreakable="false">
+      <text lang="eng" fontFamily="Arial" fontSize="10">
+        <content>
+          <p style="font-family: Courier New;">Indutância mínima para<br />garantir CCM:</p>
+        </content>
       </text>
     </region>
-    <region left="279" top="1350" width="84" height="30" border="true" color="#000000" fontSize="10">
+    <region left="279" top="1350" width="100" height="30" border="true" color="#000000" fontSize="10">
       <math>
         <input>
           <e type="operand">IL.med</e>
         </input>
         <result action="numeric">
-          <e type="operand">3</e>
+          <e type="operand">3.2</e>
           <e type="operand" style="unit">A</e>
           <e type="operator" args="2">*</e>
         </result>
@@ -520,9 +535,11 @@ garantir CCM:</p>
         </result>
       </math>
     </region>
-    <region left="45" top="1422" width="167" height="24" color="#000000" fontSize="10">
-      <text lang="por">
-        <p>Ripple de corrente:</p>
+    <region left="45" top="1422" width="166" height="23" color="#000000" fontSize="10" isBreakable="false">
+      <text lang="por" fontFamily="Arial" fontSize="10">
+        <content>
+          <p style="font-family: Courier New;">Ripple de corrente:</p>
+        </content>
       </text>
     </region>
     <region left="279" top="1422" width="262" height="30" color="#000000" fontSize="10">
@@ -535,19 +552,20 @@ garantir CCM:</p>
           <e type="operator" args="2">:</e>
         </input>
         <result action="numeric">
-          <e type="operand">0.45</e>
+          <e type="operand">0.48</e>
           <e type="operand" style="unit">A</e>
           <e type="operator" args="2">*</e>
         </result>
       </math>
     </region>
-    <region left="54" top="1458" width="159" height="40" color="#000000" fontSize="10">
-      <text lang="por">
-        <p>Corrente máxima e
-mínima no indutor:</p>
+    <region left="54" top="1458" width="158" height="38" color="#000000" fontSize="10" isBreakable="false">
+      <text lang="por" fontFamily="Arial" fontSize="10">
+        <content>
+          <p style="font-family: Courier New;">Corrente máxima e<br />mínima no indutor:</p>
+        </content>
       </text>
     </region>
-    <region left="279" top="1458" width="217" height="41" border="true" color="#000000" fontSize="10">
+    <region left="279" top="1458" width="209" height="41" border="true" color="#000000" fontSize="10">
       <math decimalPlaces="3">
         <input>
           <e type="operand">IL.max</e>
@@ -559,13 +577,13 @@ mínima no indutor:</p>
           <e type="operator" args="2">:</e>
         </input>
         <result action="numeric">
-          <e type="operand">3.225</e>
+          <e type="operand">3.44</e>
           <e type="operand" style="unit">A</e>
           <e type="operator" args="2">*</e>
         </result>
       </math>
     </region>
-    <region left="279" top="1494" width="216" height="41" border="true" color="#000000" fontSize="10">
+    <region left="279" top="1494" width="208" height="41" border="true" color="#000000" fontSize="10">
       <math decimalPlaces="3">
         <input>
           <e type="operand">IL.min</e>
@@ -577,19 +595,20 @@ mínima no indutor:</p>
           <e type="operator" args="2">:</e>
         </input>
         <result action="numeric">
-          <e type="operand">2.775</e>
+          <e type="operand">2.96</e>
           <e type="operand" style="unit">A</e>
           <e type="operator" args="2">*</e>
         </result>
       </math>
     </region>
-    <region left="0" top="1539" width="223" height="40" color="#000000" fontSize="10">
-      <text lang="por">
-        <p>Indutância do conversor:
-(pelo ripple especificado)</p>
+    <region left="0" top="1539" width="222" height="38" color="#000000" fontSize="10" isBreakable="false">
+      <text lang="por" fontFamily="Arial" fontSize="10">
+        <content>
+          <p style="font-family: Courier New;">Indutância do conversor:<br />(pelo ripple especificado)</p>
+        </content>
       </text>
     </region>
-    <region left="279" top="1539" width="211" height="47" border="true" color="#000000" bgColor="#80ff80" fontSize="10">
+    <region left="279" top="1539" width="219" height="47" border="true" color="#000000" bgColor="#80ff80" fontSize="10">
       <math decimalPlaces="3">
         <input>
           <e type="operand">L.boost</e>
@@ -603,25 +622,27 @@ mínima no indutor:</p>
           <e type="operator" args="2">:</e>
         </input>
         <contract>
-          <e type="operand" style="unit">mH</e>
+          <e type="operand" style="unit">μH</e>
         </contract>
         <result action="numeric">
-          <e type="operand">2.963</e>
+          <e type="operand">781.25</e>
         </result>
       </math>
     </region>
-    <region left="0" top="1611" width="387" height="31" border="true" color="#000000" fontSize="14">
-      <text lang="eng">
-        <p>Projeto do valor de capacitância:</p>
+    <region left="0" top="1611" width="384" height="29" border="true" color="#000000" fontSize="14" isBreakable="false">
+      <text lang="eng" fontFamily="Arial" fontSize="10">
+        <content>
+          <p style="font-family: Courier New; font-size: 14px;">Projeto do valor de capacitância:</p>
+        </content>
       </text>
     </region>
-    <region left="279" top="1647" width="96" height="24" color="#000000" fontSize="10">
+    <region left="279" top="1647" width="88" height="24" color="#000000" fontSize="10">
       <math>
         <input>
           <e type="operand">Vout</e>
         </input>
         <result action="numeric">
-          <e type="operand">300</e>
+          <e type="operand">80</e>
           <e type="operand" style="unit">V</e>
           <e type="operator" args="2">*</e>
         </result>
@@ -640,13 +661,13 @@ mínima no indutor:</p>
         </result>
       </math>
     </region>
-    <region left="279" top="1728" width="96" height="24" color="#000000" fontSize="10">
+    <region left="279" top="1728" width="88" height="24" color="#000000" fontSize="10">
       <math>
         <input>
           <e type="operand">Vout</e>
         </input>
         <result action="numeric">
-          <e type="operand">300</e>
+          <e type="operand">80</e>
           <e type="operand" style="unit">V</e>
           <e type="operator" args="2">*</e>
         </result>
@@ -662,13 +683,13 @@ mínima no indutor:</p>
           <e type="operator" args="2">:</e>
         </input>
         <result action="numeric">
-          <e type="operand">1.5</e>
+          <e type="operand">0.4</e>
           <e type="operand" style="unit">V</e>
           <e type="operator" args="2">*</e>
         </result>
       </math>
     </region>
-    <region left="279" top="1782" width="238" height="41" border="true" color="#000000" fontSize="10">
+    <region left="279" top="1782" width="222" height="41" border="true" color="#000000" fontSize="10">
       <math decimalPlaces="3">
         <input>
           <e type="operand">Vout.max</e>
@@ -680,13 +701,13 @@ mínima no indutor:</p>
           <e type="operator" args="2">:</e>
         </input>
         <result action="numeric">
-          <e type="operand">300.75</e>
+          <e type="operand">80.2</e>
           <e type="operand" style="unit">V</e>
           <e type="operator" args="2">*</e>
         </result>
       </math>
     </region>
-    <region left="279" top="1818" width="248" height="43" color="#000000" fontSize="10">
+    <region left="279" top="1818" width="232" height="43" color="#000000" fontSize="10">
       <math decimalPlaces="3">
         <input>
           <e type="operand">Vout.min</e>
@@ -699,13 +720,13 @@ mínima no indutor:</p>
           <e type="operator" args="2">:</e>
         </input>
         <result action="numeric">
-          <e type="operand">299.25</e>
+          <e type="operand">79.8</e>
           <e type="operand" style="unit">V</e>
           <e type="operator" args="2">*</e>
         </result>
       </math>
     </region>
-    <region left="279" top="1863" width="320" height="55" border="true" color="#000000" bgColor="#80ff80" fontSize="10">
+    <region left="279" top="1863" width="312" height="55" border="true" color="#000000" bgColor="#80ff80" fontSize="10">
       <math decimalPlaces="3">
         <input>
           <e type="operand">Cout</e>
@@ -723,28 +744,32 @@ mínima no indutor:</p>
           <e type="operand" style="unit">μF</e>
         </contract>
         <result action="numeric">
-          <e type="operand">8.889</e>
+          <e type="operand">37.5</e>
         </result>
       </math>
     </region>
-    <region left="0" top="1872" width="191" height="24" color="#000000" fontSize="10">
-      <text lang="por">
-        <p>Capacitância de saída:</p>
+    <region left="0" top="1872" width="190" height="23" color="#000000" fontSize="10" isBreakable="false">
+      <text lang="por" fontFamily="Arial" fontSize="10">
+        <content>
+          <p style="font-family: Courier New;">Capacitância de saída:</p>
+        </content>
       </text>
     </region>
-    <region left="0" top="1935" width="320" height="31" border="true" color="#000000" fontSize="14">
-      <text lang="por">
-        <p>Seleção dos semicondutores:</p>
+    <region left="0" top="1935" width="316" height="29" border="true" color="#000000" fontSize="14" isBreakable="false">
+      <text lang="por" fontFamily="Arial" fontSize="10">
+        <content>
+          <p style="font-family: Courier New; font-size: 14px;">Seleção dos semicondutores:</p>
+        </content>
       </text>
     </region>
-    <region left="0" top="1971" width="247" height="57" color="#000000" fontSize="10">
-      <text lang="por">
-        <p>Semicondutores: mesma
-especificações para diodo (D)
-e chave (S)</p>
+    <region left="0" top="1971" width="246" height="53" color="#000000" fontSize="10" isBreakable="false">
+      <text lang="por" fontFamily="Arial" fontSize="10">
+        <content>
+          <p style="font-family: Courier New;">Semicondutores: mesma<br />especificações para diodo (D)<br />e chave (S)</p>
+        </content>
       </text>
     </region>
-    <region left="279" top="1971" width="187" height="30" border="true" color="#000000" bgColor="#80ff80" fontSize="10">
+    <region left="279" top="1971" width="171" height="30" border="true" color="#000000" bgColor="#80ff80" fontSize="10">
       <math>
         <input>
           <e type="operand">V.max</e>
@@ -752,13 +777,13 @@ e chave (S)</p>
           <e type="operator" args="2">:</e>
         </input>
         <result action="numeric">
-          <e type="operand">300.75</e>
+          <e type="operand">80.2</e>
           <e type="operand" style="unit">V</e>
           <e type="operator" args="2">*</e>
         </result>
       </math>
     </region>
-    <region left="279" top="2007" width="163" height="30" border="true" color="#000000" bgColor="#80ff80" fontSize="10">
+    <region left="279" top="2007" width="155" height="30" border="true" color="#000000" bgColor="#80ff80" fontSize="10">
       <math>
         <input>
           <e type="operand">I.max</e>
@@ -766,39 +791,30 @@ e chave (S)</p>
           <e type="operator" args="2">:</e>
         </input>
         <result action="numeric">
-          <e type="operand">3.225</e>
+          <e type="operand">3.44</e>
           <e type="operand" style="unit">A</e>
           <e type="operator" args="2">*</e>
         </result>
       </math>
     </region>
-    <region left="360" top="2052" width="303" height="235" border="true" color="#000000" fontSize="10">
-      <text lang="por">
-        <p>Diodos disponíveis nos laboratórios:
-MUR160:  600V e 1A
-BYT11:    1kV e 1A
-MUR460:  600V e 4A
-MUR4100: 1kV e 4A
-MURF1060: 600V e 10A
-
-Chaves disponíveis nos laboratórios:
-IRF540: 100V e 20A
-IRF640: 200V e 11A
-IRF740: 400V e 6,3A
-IRF840: 500V e 5,1A
-IRFP460: 500V e 12A
-IRFP250: 200V e 19A</p>
+    <region left="360" top="2052" width="302" height="233" border="true" color="#000000" fontSize="10" isBreakable="false">
+      <text lang="por" fontFamily="Arial" fontSize="10">
+        <content>
+          <p style="font-family: Courier New;">Diodos disponíveis nos laboratórios:<br />MUR160:  600V e 1A<br />BYT11:    1kV e 1A<br />MUR460:  600V e 4A<br />MUR4100: 1kV e 4A<br />MURF1060: 600V e 10A<br /><br />Chaves disponíveis nos laboratórios:<br />IRF530: 100V e 10A<br />IRF540: 100V e 20A<br />IRF640: 200V e 11A<br />IRF740: 400V e 6,3A<br />IRF840: 500V e 5,1A<br />IRFP460: 500V e 12A<br />IRFP250: 200V e 19A</p>
+        </content>
       </text>
     </region>
     <region top="2295" color="#000000">
       <area single="true" collapsed="true" />
     </region>
-    <region left="9" top="2313" width="129" height="31" border="true" color="#000000" fontSize="14">
-      <text lang="eng">
-        <p>Simulação:</p>
+    <region left="9" top="2313" width="126" height="29" border="true" color="#000000" fontSize="14" isBreakable="false">
+      <text lang="eng" fontFamily="Arial" fontSize="10">
+        <content>
+          <p style="font-family: Courier New; font-size: 14px;">Simulação:</p>
+        </content>
       </text>
     </region>
-    <region left="387" top="2340" width="238" height="41" border="true" color="#000000" fontSize="10">
+    <region left="387" top="2340" width="214" height="41" border="true" color="#000000" fontSize="10">
       <math decimalPlaces="3">
         <input>
           <e type="operand">ton.LTspice</e>
@@ -813,7 +829,7 @@ IRFP250: 200V e 19A</p>
           <e type="operand" style="unit">μs</e>
         </contract>
         <result action="numeric">
-          <e type="operand">13.333</e>
+          <e type="operand">7.5</e>
         </result>
       </math>
     </region>
@@ -827,7 +843,7 @@ IRFP250: 200V e 19A</p>
           <e type="operator" args="2">:</e>
         </input>
         <result action="numeric">
-          <e type="operand">240</e>
+          <e type="operand">135</e>
         </result>
       </math>
     </region>
@@ -861,6 +877,16 @@ IRFP250: 200V e 19A</p>
         </result>
       </math>
     </region>
+    <region left="288" top="2394" width="82" height="30" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">D.1</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">0.375</e>
+        </result>
+      </math>
+    </region>
     <region left="54" top="2430" width="249" height="42" border="true" color="#000000" fontSize="10">
       <math decimalPlaces="3">
         <input>
@@ -884,7 +910,7 @@ IRFP250: 200V e 19A</p>
         </result>
       </math>
     </region>
-    <region left="54" top="2475" width="152" height="30" border="true" color="#000000" fontSize="10">
+    <region left="54" top="2475" width="136" height="30" border="true" color="#000000" fontSize="10">
       <math>
         <input>
           <e type="operand">L.boost</e>
@@ -893,11 +919,11 @@ IRFP250: 200V e 19A</p>
           <e type="operand" style="unit">μH</e>
         </contract>
         <result action="numeric">
-          <e type="operand">2962.963</e>
+          <e type="operand">781.25</e>
         </result>
       </math>
     </region>
-    <region left="54" top="2511" width="128" height="24" border="true" color="#000000" fontSize="10">
+    <region left="54" top="2511" width="112" height="24" border="true" color="#000000" fontSize="10">
       <math>
         <input>
           <e type="operand">Cout</e>
@@ -906,17 +932,17 @@ IRFP250: 200V e 19A</p>
           <e type="operand" style="unit">μF</e>
         </contract>
         <result action="numeric">
-          <e type="operand">8.8889</e>
+          <e type="operand">37.5</e>
         </result>
       </math>
     </region>
-    <region left="54" top="2538" width="96" height="24" border="true" color="#000000" fontSize="10">
+    <region left="54" top="2538" width="88" height="24" border="true" color="#000000" fontSize="10">
       <math>
         <input>
           <e type="operand">Rout</e>
         </input>
         <result action="numeric">
-          <e type="operand">300</e>
+          <e type="operand">40</e>
           <e type="operand" style="unit">Ω</e>
           <e type="operator" args="2">*</e>
         </result>
@@ -934,62 +960,66 @@ IRFP250: 200V e 19A</p>
         </result>
       </math>
     </region>
-    <region left="36" top="2628" width="95" height="24" color="#000000" fontSize="10">
-      <text lang="por">
-        <p>Verificar:</p>
+    <region left="36" top="2628" width="94" height="23" color="#000000" fontSize="10" isBreakable="false">
+      <text lang="por" fontFamily="Arial" fontSize="10">
+        <content>
+          <p style="font-family: Courier New;">Verificar:</p>
+        </content>
       </text>
     </region>
-    <region left="54" top="2655" width="140" height="30" border="true" color="#000000" fontSize="10">
+    <region left="54" top="2655" width="124" height="30" border="true" color="#000000" fontSize="10">
       <math>
         <input>
           <e type="operand">Vout.max</e>
         </input>
         <result action="numeric">
-          <e type="operand">300.75</e>
+          <e type="operand">80.2</e>
           <e type="operand" style="unit">V</e>
           <e type="operator" args="2">*</e>
         </result>
       </math>
     </region>
-    <region left="54" top="2682" width="140" height="30" border="true" color="#000000" fontSize="10">
+    <region left="54" top="2682" width="124" height="30" border="true" color="#000000" fontSize="10">
       <math>
         <input>
           <e type="operand">Vout.min</e>
         </input>
         <result action="numeric">
-          <e type="operand">299.25</e>
+          <e type="operand">79.8</e>
           <e type="operand" style="unit">V</e>
           <e type="operator" args="2">*</e>
         </result>
       </math>
     </region>
-    <region left="54" top="2718" width="116" height="30" border="true" color="#000000" fontSize="10">
+    <region left="54" top="2718" width="108" height="30" border="true" color="#000000" fontSize="10">
       <math decimalPlaces="3">
         <input>
           <e type="operand">IL.min</e>
         </input>
         <result action="numeric">
-          <e type="operand">2.775</e>
+          <e type="operand">2.96</e>
           <e type="operand" style="unit">A</e>
           <e type="operator" args="2">*</e>
         </result>
       </math>
     </region>
-    <region left="54" top="2745" width="116" height="30" border="true" color="#000000" fontSize="10">
+    <region left="54" top="2745" width="108" height="30" border="true" color="#000000" fontSize="10">
       <math decimalPlaces="3">
         <input>
           <e type="operand">IL.max</e>
         </input>
         <result action="numeric">
-          <e type="operand">3.225</e>
+          <e type="operand">3.44</e>
           <e type="operand" style="unit">A</e>
           <e type="operator" args="2">*</e>
         </result>
       </math>
     </region>
-    <region left="0" top="2808" width="62" height="31" border="true" color="#000000" fontSize="14">
-      <text lang="por">
-        <p>EOF.</p>
+    <region left="0" top="2808" width="59" height="29" border="true" color="#000000" fontSize="14" isBreakable="false">
+      <text lang="por" fontFamily="Arial" fontSize="10">
+        <content>
+          <p style="font-family: Courier New; font-size: 14px;">EOF.</p>
+        </content>
       </text>
     </region>
     <region top="2826" color="#000000">
