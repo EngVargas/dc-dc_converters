@@ -1,0 +1,399 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?application progid="SMath Studio Desktop" version="0.99.7822.147"?>
+<worksheet xmlns="http://smath.info/schemas/worksheet/1.0">
+  <settings ppi="96">
+    <identity>
+      <id>85dbbb3f-e7b1-4ae6-a2f3-71ae85369ea3</id>
+      <revision>6</revision>
+    </identity>
+    <calculation>
+      <precision>4</precision>
+      <exponentialThreshold>5</exponentialThreshold>
+      <trailingZeros>false</trailingZeros>
+      <significantDigitsMode>false</significantDigitsMode>
+      <roundingMode>0</roundingMode>
+      <fractions>decimal</fractions>
+    </calculation>
+    <pageModel active="false" viewMode="2" printGrid="false" printAreas="true" simpleEqualsOnly="false" printBackgroundImages="true">
+      <paper id="9" orientation="Portrait" width="827" height="1169" />
+      <margins left="39" right="39" top="49" bottom="49" />
+      <header alignment="Center" color="#a9a9a9">&amp;[DATE] &amp;[TIME] - &amp;[FILENAME]</header>
+      <footer alignment="Center" color="#a9a9a9">&amp;[PAGENUM] / &amp;[COUNT]</footer>
+      <backgrounds />
+    </pageModel>
+    <dependencies>
+      <assembly name="SMath Studio Desktop" version="0.99.7822.147" guid="a37cba83-b69c-4c71-9992-55ff666763bd" />
+      <assembly name="MathRegion" version="1.11.7822.147" guid="02f1ab51-215b-466e-a74d-5d8b1cf85e8d" />
+      <assembly name="SpecialFunctions" version="1.12.7822.147" guid="2814e667-4e12-48b1-8d51-194e480eabc5" />
+      <assembly name="TextRegion" version="1.11.7822.147" guid="485d28c5-349a-48b6-93be-12a35a1c1e39" />
+    </dependencies>
+  </settings>
+  <regions type="content">
+    <region left="0" top="0" width="451" height="23" color="#000000" fontSize="10" isBreakable="false">
+      <text lang="por" fontFamily="Arial" fontSize="10">
+        <content>
+          <p>Exemplo 1: Fonte CA senoidal perfeita e carga linear (no caso, carga RL):</p>
+        </content>
+      </text>
+    </region>
+    <region left="36" top="36" width="100" height="30" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">V.pico</e>
+          <e type="operand">100</e>
+          <e type="operand" style="unit">V</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="36" top="72" width="173" height="31" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">t</e>
+          <e type="function" args="1">vin</e>
+          <e type="operand">V.pico</e>
+          <e type="operand">t</e>
+          <e type="function" args="1">sin</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="36" top="135" width="176" height="23" color="#000000" fontSize="10">
+      <text lang="por" fontFamily="Arial" fontSize="10">
+        <content>
+          <p>Definição de média e RMS:</p>
+        </content>
+      </text>
+    </region>
+    <region left="36" top="162" width="346" height="69" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">Vin.AVG</e>
+          <e type="operand">1</e>
+          <e type="operand">2</e>
+          <e type="operand">π</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">/</e>
+          <e type="operand">t</e>
+          <e type="function" args="1">vin</e>
+          <e type="operand">t</e>
+          <e type="operand">0</e>
+          <e type="operand">2</e>
+          <e type="operand">π</e>
+          <e type="operator" args="2">*</e>
+          <e type="function" args="4">int</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">9.2406</e>
+          <e type="operand">10</e>
+          <e type="operand">15</e>
+          <e type="operator" args="1">-</e>
+          <e type="operator" args="2">^</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand" style="unit">V</e>
+          <e type="operator" args="2">*</e>
+        </result>
+      </math>
+    </region>
+    <region left="504" top="189" width="128" height="23" color="#000000" fontSize="10">
+      <text lang="por" fontFamily="Arial" fontSize="10">
+        <content>
+          <p>médio = AVG = CC</p>
+        </content>
+      </text>
+    </region>
+    <region left="36" top="234" width="334" height="71" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">Vin.RMS</e>
+          <e type="operand">1</e>
+          <e type="operand">2</e>
+          <e type="operand">π</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">/</e>
+          <e type="operand">t</e>
+          <e type="function" args="1">vin</e>
+          <e type="bracket">(</e>
+          <e type="operand">2</e>
+          <e type="operator" args="2">^</e>
+          <e type="operand">t</e>
+          <e type="operand">0</e>
+          <e type="operand">2</e>
+          <e type="operand">π</e>
+          <e type="operator" args="2">*</e>
+          <e type="function" args="4">int</e>
+          <e type="operator" args="2">*</e>
+          <e type="function" args="1">sqrt</e>
+          <e type="operator" args="2">:</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">70.7107</e>
+          <e type="operand" style="unit">V</e>
+          <e type="operator" args="2">*</e>
+        </result>
+      </math>
+    </region>
+    <region left="513" top="261" width="94" height="23" color="#000000" fontSize="10">
+      <text lang="por" fontFamily="Arial" fontSize="10">
+        <content>
+          <p>eficaz = RMS</p>
+        </content>
+      </text>
+    </region>
+    <region left="9" top="342" width="435" height="23" color="#000000" fontSize="10">
+      <text lang="por" fontFamily="Arial" fontSize="10">
+        <content>
+          <p>Exemplo 2: Fonte CC e carga não linear (no caso, um conversor buck):</p>
+        </content>
+      </text>
+    </region>
+    <region left="54" top="369" width="148" height="23" color="#000000" fontSize="10">
+      <text lang="por" fontFamily="Arial" fontSize="10">
+        <content>
+          <p>Pela simulação temos:</p>
+        </content>
+      </text>
+    </region>
+    <region left="54" top="405" width="93" height="30" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">Vi.RMS</e>
+          <e type="operand">80</e>
+          <e type="operand" style="unit">V</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="405" top="414" width="125" height="30" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">Vo.RMS</e>
+          <e type="operand">44.658</e>
+          <e type="operand" style="unit">V</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="54" top="441" width="93" height="30" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">Vi.AVG</e>
+          <e type="operand">80</e>
+          <e type="operand" style="unit">V</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="405" top="441" width="125" height="30" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">Vo.AVG</e>
+          <e type="operand">44.658</e>
+          <e type="operand" style="unit">V</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="54" top="468" width="133" height="30" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">Ii.RMS</e>
+          <e type="operand">469.79</e>
+          <e type="operand" style="unit">mA</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="405" top="468" width="133" height="30" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">Io.RMS</e>
+          <e type="operand">446.58</e>
+          <e type="operand" style="unit">mA</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="54" top="495" width="133" height="30" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">Ii.AVG</e>
+          <e type="operand">249.29</e>
+          <e type="operand" style="unit">mA</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="405" top="504" width="133" height="30" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">Io.AVG</e>
+          <e type="operand">446.58</e>
+          <e type="operand" style="unit">mA</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="54" top="540" width="172" height="30" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">Pin.simulacao</e>
+          <e type="operand">19.943</e>
+          <e type="operand" style="unit">W</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="405" top="549" width="164" height="30" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">Po.simulacao</e>
+          <e type="operand">19.943</e>
+          <e type="operand" style="unit">W</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="54" top="594" width="181" height="23" color="#000000" fontSize="10">
+      <text lang="por" fontFamily="Arial" fontSize="10">
+        <content>
+          <p>Pela definição das potência:</p>
+        </content>
+      </text>
+    </region>
+    <region left="54" top="630" width="222" height="30" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">Pin</e>
+          <e type="operand">Vi.AVG</e>
+          <e type="operand">Ii.AVG</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">19.9432</e>
+          <e type="operand" style="unit">W</e>
+          <e type="operator" args="2">*</e>
+        </result>
+      </math>
+    </region>
+    <region left="378" top="630" width="214" height="30" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">Po</e>
+          <e type="operand">Vo.AVG</e>
+          <e type="operand">Io.AVG</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">19.9434</e>
+          <e type="operand" style="unit">W</e>
+          <e type="operator" args="2">*</e>
+        </result>
+      </math>
+    </region>
+    <region left="621" top="630" width="136" height="38" color="#000000" fontSize="10">
+      <text lang="por" fontFamily="Arial" fontSize="10">
+        <content>
+          <p>P = potência ativa = potência média</p>
+        </content>
+      </text>
+    </region>
+    <region left="54" top="657" width="222" height="30" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">Sin</e>
+          <e type="operand">Vi.RMS</e>
+          <e type="operand">Ii.RMS</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">37.5832</e>
+          <e type="operand" style="unit">W</e>
+          <e type="operator" args="2">*</e>
+        </result>
+      </math>
+    </region>
+    <region left="378" top="657" width="214" height="30" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">So</e>
+          <e type="operand">Vo.RMS</e>
+          <e type="operand">Io.RMS</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">19.9434</e>
+          <e type="operand" style="unit">W</e>
+          <e type="operator" args="2">*</e>
+        </result>
+      </math>
+    </region>
+    <region left="621" top="666" width="111" height="38" color="#000000" fontSize="10">
+      <text lang="por" fontFamily="Arial" fontSize="10">
+        <content>
+          <p>S = potência aparente = RMS</p>
+        </content>
+      </text>
+    </region>
+    <region left="54" top="693" width="208" height="23" color="#000000" fontSize="10">
+      <text lang="por" fontFamily="Arial" fontSize="10">
+        <content>
+          <p>Rendimento pode ser obtido por:</p>
+        </content>
+      </text>
+    </region>
+    <region left="54" top="720" width="92" height="41" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">η</e>
+          <e type="operand">Po</e>
+          <e type="operand">Pin</e>
+          <e type="operator" args="2">/</e>
+          <e type="operator" args="2">:</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">1</e>
+        </result>
+      </math>
+    </region>
+    <region left="45" top="774" width="347" height="23" color="#000000" fontSize="10">
+      <text lang="por" fontFamily="Arial" fontSize="10">
+        <content>
+          <p>Se fizer pelos valores RMS (o que está errado) teremos:</p>
+        </content>
+      </text>
+    </region>
+    <region left="54" top="792" width="172" height="41" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">Errado</e>
+          <e type="operand">So</e>
+          <e type="operand">Sin</e>
+          <e type="operator" args="2">/</e>
+          <e type="operator" args="2">:</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">0.5306</e>
+        </result>
+      </math>
+    </region>
+  </regions>
+</worksheet>
