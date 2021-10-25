@@ -1,0 +1,248 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?application progid="SMath Studio Desktop" version="0.99.7822.147"?>
+<worksheet xmlns="http://smath.info/schemas/worksheet/1.0">
+  <settings ppi="96">
+    <identity>
+      <id>506cefc2-9025-495f-90fb-0dabcb05cbb0</id>
+      <revision>7</revision>
+    </identity>
+    <calculation>
+      <precision>4</precision>
+      <exponentialThreshold>5</exponentialThreshold>
+      <trailingZeros>false</trailingZeros>
+      <significantDigitsMode>false</significantDigitsMode>
+      <roundingMode>0</roundingMode>
+      <fractions>decimal</fractions>
+    </calculation>
+    <pageModel active="false" viewMode="2" printGrid="false" printAreas="true" simpleEqualsOnly="false" printBackgroundImages="true">
+      <paper id="9" orientation="Portrait" width="827" height="1169" />
+      <margins left="39" right="39" top="49" bottom="49" />
+      <header alignment="Center" color="#a9a9a9">&amp;[DATE] &amp;[TIME] - &amp;[FILENAME]</header>
+      <footer alignment="Center" color="#a9a9a9">&amp;[PAGENUM] / &amp;[COUNT]</footer>
+      <backgrounds />
+    </pageModel>
+    <dependencies>
+      <assembly name="SMath Studio Desktop" version="0.99.7822.147" guid="a37cba83-b69c-4c71-9992-55ff666763bd" />
+      <assembly name="MathRegion" version="1.11.7822.147" guid="02f1ab51-215b-466e-a74d-5d8b1cf85e8d" />
+      <assembly name="TextRegion" version="1.11.7822.147" guid="485d28c5-349a-48b6-93be-12a35a1c1e39" />
+    </dependencies>
+  </settings>
+  <regions type="content">
+    <region left="72" top="54" width="266" height="23" color="#000000" fontSize="10">
+      <text lang="por" fontFamily="Arial" fontSize="10">
+        <content>
+          <p>Potência de entrada (consumida da fonte):</p>
+        </content>
+      </text>
+    </region>
+    <region left="351" top="54" width="114" height="24" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">Pin</e>
+          <e type="operand">234.86</e>
+          <e type="operand" style="unit">W</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="351" top="81" width="122" height="24" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">Pout</e>
+          <e type="operand">207.24</e>
+          <e type="operand" style="unit">W</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="99" top="90" width="238" height="23" color="#000000" fontSize="10">
+      <text lang="por" fontFamily="Arial" fontSize="10">
+        <content>
+          <p>Potência de saída (entregue a carga):</p>
+        </content>
+      </text>
+    </region>
+    <region left="351" top="117" width="160" height="41" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">n</e>
+          <e type="operand">Pout</e>
+          <e type="operand">Pin</e>
+          <e type="operator" args="2">/</e>
+          <e type="operator" args="2">:</e>
+        </input>
+        <contract>
+          <e type="operand" style="unit">%</e>
+        </contract>
+        <result action="numeric">
+          <e type="operand">88.2398</e>
+        </result>
+      </math>
+    </region>
+    <region left="243" top="126" width="90" height="23" color="#000000" fontSize="10">
+      <text lang="por" fontFamily="Arial" fontSize="10">
+        <content>
+          <p>Rendimento:</p>
+        </content>
+      </text>
+    </region>
+    <region left="216" top="162" width="113" height="23" color="#000000" fontSize="10">
+      <text lang="por" fontFamily="Arial" fontSize="10">
+        <content>
+          <p>Perdas em Watt:</p>
+        </content>
+      </text>
+    </region>
+    <region left="351" top="162" width="277" height="30" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">Diferenca.InOut</e>
+          <e type="operand">Pin</e>
+          <e type="operand">Pout</e>
+          <e type="operator" args="2">-</e>
+          <e type="operator" args="2">:</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">27.62</e>
+          <e type="operand" style="unit">W</e>
+          <e type="operator" args="2">*</e>
+        </result>
+      </math>
+    </region>
+    <region left="234" top="189" width="192" height="23" color="#000000" fontSize="10">
+      <text lang="por" fontFamily="Arial" fontSize="10">
+        <content>
+          <p>----------------------------------------</p>
+        </content>
+      </text>
+    </region>
+    <region left="180" top="225" width="138" height="23" color="#000000" fontSize="10">
+      <text lang="por" fontFamily="Arial" fontSize="10">
+        <content>
+          <p>Perdas no MOSFET:</p>
+        </content>
+      </text>
+    </region>
+    <region left="351" top="225" width="130" height="30" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">P.chave</e>
+          <e type="operand">5.3993</e>
+          <e type="operand" style="unit">W</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="207" top="261" width="115" height="23" color="#000000" fontSize="10">
+      <text lang="por" fontFamily="Arial" fontSize="10">
+        <content>
+          <p>Perdas no diodo:</p>
+        </content>
+      </text>
+    </region>
+    <region left="351" top="261" width="130" height="30" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">P.diodo</e>
+          <e type="operand">3.6677</e>
+          <e type="operand" style="unit">W</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="198" top="297" width="123" height="23" color="#000000" fontSize="10">
+      <text lang="por" fontFamily="Arial" fontSize="10">
+        <content>
+          <p>Perdas no indutor:</p>
+        </content>
+      </text>
+    </region>
+    <region left="351" top="297" width="143" height="30" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">P.indutor</e>
+          <e type="operand">18.671</e>
+          <e type="operand" style="unit">W</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="351" top="333" width="164" height="30" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">P.capacitor</e>
+          <e type="operand">491.21</e>
+          <e type="operand" style="unit">μW</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="198" top="342" width="136" height="23" color="#000000" fontSize="10">
+      <text lang="por" fontFamily="Arial" fontSize="10">
+        <content>
+          <p>Perdas no capacitor:</p>
+        </content>
+      </text>
+    </region>
+    <region left="117" top="396" width="456" height="30" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">Perdas.totais</e>
+          <e type="operand">P.chave</e>
+          <e type="operand">P.diodo</e>
+          <e type="operator" args="2">+</e>
+          <e type="operand">P.indutor</e>
+          <e type="operator" args="2">+</e>
+          <e type="operand">P.capacitor</e>
+          <e type="operator" args="2">+</e>
+          <e type="operator" args="2">:</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">27.7385</e>
+          <e type="operand" style="unit">W</e>
+          <e type="operator" args="2">*</e>
+        </result>
+      </math>
+    </region>
+    <region left="117" top="450" width="390" height="30" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">Erro.abs</e>
+          <e type="operand">Perdas.totais</e>
+          <e type="operand">Diferenca.InOut</e>
+          <e type="operator" args="2">-</e>
+          <e type="operator" args="2">:</e>
+        </input>
+        <contract>
+          <e type="operand" style="unit">mW</e>
+        </contract>
+        <result action="numeric">
+          <e type="operand">118.4912</e>
+        </result>
+      </math>
+    </region>
+    <region left="117" top="495" width="246" height="47" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">Erro.relativo</e>
+          <e type="operand">Erro.abs</e>
+          <e type="operand">Pin</e>
+          <e type="operator" args="2">/</e>
+          <e type="operator" args="2">:</e>
+        </input>
+        <contract>
+          <e type="operand" style="unit">%</e>
+        </contract>
+        <result action="numeric">
+          <e type="operand">0.0505</e>
+        </result>
+      </math>
+    </region>
+  </regions>
+</worksheet>
